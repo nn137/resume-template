@@ -14,5 +14,9 @@
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <p>{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}</p>
+  <p>url {{ page.url | replace:'index.html',''}}</p>
+  <p>url {{ page.url }}</p>
+  <p>{{ site.baseurl }}, {{ site.url }}</p>
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.ico" />
 </head>
